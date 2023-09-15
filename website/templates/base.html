@@ -24,6 +24,11 @@
               <a class="nav-link px-3" href="{{ url_for('views.veg_box') }}">Weekly Veg Box</a>
               <a class="nav-link ps-3" href="#">Contact</a>
               <a class="nav-link ps-3" href="#">Blog</a>
+              {% if session.get("admin") %}
+              <a class="nav-link ps-3" href="{{ url_for('views.dashboard') }}">Dashboard</a>
+              {% else %}
+              <a class="nav-link ps-3" href="{{ url_for('auth.login') }}">Login</a>
+              {% endif %}
             </div>
           </div>
         </div>
