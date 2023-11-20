@@ -94,13 +94,9 @@ p{
 	transition:all 0.5s ease;
 }
 
-html{
-	cursor: none;
-	scroll-behavior: smooth;
-}
-
-body{
-
+body, html {
+	margin: 0;
+	padding: 0;
     cursor: none;
 	scroll-behavior: smooth;
 	background-color: #000;
