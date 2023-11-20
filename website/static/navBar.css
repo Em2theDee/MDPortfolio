@@ -80,7 +80,7 @@
     grid-template-columns: repeat(4, auto);
     padding: 0;
     gap: 6px;
-    margin-bottom: 5vw;
+    margin-bottom: 20px;
     
     background-color: rgba(74, 73, 71, 0.33);  
     backdrop-filter: blur(30px);
