@@ -11,6 +11,7 @@
     height: 100vh;
 }
 .navbar {
+    position: fixed;
     display: grid;
     grid-template-columns: repeat(4, auto);
     z-index: 3;
