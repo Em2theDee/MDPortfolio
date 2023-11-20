@@ -12,3 +12,4 @@ function updateCursorPosition(event) {
 }
 
 document.addEventListener('mousemove', updateCursorPosition);
+
