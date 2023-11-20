@@ -4,14 +4,14 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    position: fixed;
+    position: sticky;
     left: 50%;
     transform: translate(-50%);
     width: 1px;
     height: 100vh;
 }
 .navbar {
-    position: fixed;
+    position: sticky;
     display: grid;
     grid-template-columns: repeat(4, auto);
     z-index: 3;
