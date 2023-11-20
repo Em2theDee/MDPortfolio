@@ -237,10 +237,32 @@ a{
 	font-size: 5rem;
 }
 
+.text-colour{
+	color: #6037AF;
+}
+
 @media (max-width: 800px) {
 	.text1 {
 		font-size: 3.3rem;
 		margin: 100px 4vw 120px 4vw;
+	}
+}
+
+.arrow{
+	/* border: 2px solid #fff; */
+	position: absolute;
+	visibility: hidden;
+
+	margin-top: 35px;
+	left:  50%;
+	transform: translate(-50%);
+	height: 50px;
+	width: 50px;
+}
+
+@media (max-width: 800px) {
+	.arrow{
+		visibility: visible;
 	}
 }
 

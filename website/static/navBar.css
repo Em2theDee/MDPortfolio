@@ -8,23 +8,20 @@
     left: 50%;
     transform: translate(-50%);
     width: 1px;
-    height: 100vh;
+    height: 100lvh;
 }
 .navbar {
-    position: fixed;
+    position: sticky;
     display: grid;
     grid-template-columns: repeat(4, auto);
     z-index: 3;
     gap: 8px;
-
     
     background-color: rgba(74, 73, 71, 0.144);  
     backdrop-filter: blur(30px);
     border-radius: 18px;
     margin-bottom: 2vw;
     
-
-
     transition: background-color 0.3s ease;
     opacity: 0;
     animation: fadeInUp1 0.9s ease forwards, moveUp1 0.9s ease forwards;
@@ -77,16 +74,16 @@
 
 @media  (max-width: 800px) {
 .navbar {
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(4, auto);
     padding: 0;
     gap: 6px;
-    margin-bottom: 20px;
     
     background-color: rgba(74, 73, 71, 0.33);  
     backdrop-filter: blur(30px);
     border-radius: 18px;
-    /**/
+
     transition: background-color 0.3s ease;
     opacity: 0;
     transform: translateX(40px);
@@ -96,7 +93,7 @@
 .nav-button {
     white-space: nowrap;
     font-size: 9px;
-    padding: 9px 25px;
+    padding: 9px 20px;
     background-color: #222222; 
     height: 30px;
     border-radius: 12px;
@@ -122,8 +119,6 @@
 
 
 .grid-containers {
-    /* border: 2px solid #fff; */
-
     margin: 0 70px;
     padding: 120px 100px 30px 100px;
     display: grid;
