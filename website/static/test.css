@@ -1,0 +1,270 @@
+
+
+h0 {
+	font-family: "gotham", sans-serif;
+	display: inline-block;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	font-family: "Gravity Variable", Icons;
+	font-style: normal;
+	color: rgba(0, 0, 0, 0.85);
+	font-variation-settings: 'wdth' 150;
+}
+
+h0 a {
+	color: rgba(0, 0, 0, 0.85);
+}
+
+h0:hover{
+	color: #D9D9D9;
+}
+
+h1 {
+	font-family: "pretendard", Icons;
+	font-style: 500;
+	white-space: nowrap;
+	color: #D9D9D9;
+	font-weight: 900;
+	line-height: 1.4;
+}
+
+h1 a {
+	color: #6037af;
+}
+
+h1:hover{
+	background-color: none;
+}
+
+h2 {
+	font-family: "gotham", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	color: rgba(0, 0, 0, 0.85);
+	font-size: 1.0rem;
+	line-height: 1.2;
+	font-variation-settings: 'slnt' 0, 'MONO' 0;
+	}
+
+h2 a {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+h3 {
+	font-family: "gotham", sans-serif;
+    text-align: center;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	color: #D9D9D9 ;
+	line-height: 1.2;
+	font-weight: 600;
+}
+
+h3 a {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+h4 {
+	font-family: "gotham", sans-serif;
+	font-style: 300;
+    text-align: center;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	font-size: 1.8rem;
+	line-height: 0.5;
+	font-weight: 400;
+	}
+h4 a {
+	color: rgba(0, 0, 0, 0.85);
+}
+
+h4:hover {
+	color: #6037AF;
+}
+
+h5 {
+	font-family: "gotham", sans-serif;
+	font-style: 300;
+    text-align: center;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	font-size: 1.3rem;
+	line-height: 0.5;
+	}
+
+h5 a {
+	color: rgba(0, 0, 0, 0.85);
+}
+
+h6 {
+	font-family: "gotham", sans-serif;
+	font-style: 300;
+    text-align: center;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	color: #d9d9d9;
+	font-size: 10.12vw;
+	line-height: 1.2;
+	font-weight: 400;
+	}
+
+h6 a {
+	color: rgba(0, 0, 0, 0.85);
+}
+small {
+	display: inline-block;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	font-family: "Diatype Variable", Icons;
+	font-style: normal;
+	font-weight: 700;
+	color: rgba(217, 217, 217, 0.43);
+	font-variation-settings: 'slnt' 0, 'MONO' 0;
+}
+
+small a {
+	color: rgba(255, 255, 255, 0.85);
+	border-bottom-width: 0em;
+}
+
+
+
+
+
+/**/
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+
+}
+
+html{
+	cursor: none;
+	scroll-behavior: smooth;
+}
+
+body{
+    cursor: none;
+	scroll-behavior: smooth;
+	background-color: #000;
+}
+
+a{
+	cursor: none;
+}
+
+/**/
+
+
+
+.custom-cursor {
+    cursor: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #6137af;
+	backdrop-filter: blur(3px);
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.landing-parent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landing-graphic{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    border-radius: 25px;
+	margin: 0 50px;
+	padding: 25px;
+    border: 10px solid #fff;
+	gap: 10px;
+	overflow-x: hidden;
+
+	background-size: 200px 300px; 
+    background-image: url('https://files.cargocollective.com/c2023195/gradient.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: moveImage 10s infinite linear;
+}
+
+@keyframes moveImage {
+	0% {
+	  background-position: 0% 0%;
+	}
+	10% {
+	  background-position: 50% 65%;
+	}
+	25% {
+	  background-position: 100% 45%;
+	}
+	40% {
+	  background-position: 15% 50%;
+	}
+	50% {
+	  background-position: 100% 100%;
+	}
+	65% {
+	  background-position: 25% 50%;
+	}
+	75% {
+	  background-position: 100% 50%;
+	}
+	85% {
+	  background-position: 50% 25%;
+	}
+	100% {
+	  background-position: 0% 0%;
+	}
+  }
+
+.landing-text{
+
+	height: 90%;
+	font-size: clamp(25px, 2px + 1.5vw, 50px);
+}
+
+.model {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.model-inside{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	height: 90%;
+	
+}
+.model-inside-two{
+	width: 35vw;
+	height: 35vw;
+}
+
+@media (max-width: 1300px) {
+    .model-inside-two{
+		width: 55vh;
+		height: 55vh;
+    }
+}
