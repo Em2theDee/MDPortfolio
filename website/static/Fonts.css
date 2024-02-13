@@ -1,70 +1,97 @@
 @font-face {
-    font-family: 'gotham', sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    src: url('static/fonts/Gotham-Light.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'gotham', sans-serif;
-    font-weight: 100;
-    font-style: italic;
-    src: url('static/fonts/GothamGotham-LightItalic.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'gotham', sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    src: url('static/fonts/Gotham-Book.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'gotham', sans-serif;
-    font-weight: 200;
-    font-style: italic;
-    src: url('static/fonts/Gotham-BookItalic.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'gotham', sans-serif;
+    font-family: 'Unageo';
     font-weight: 300;
     font-style: normal;
-    src: url('static/fonts/Gotham-Medium.woff2') format('woff2');
+    src: url('fonts/Unageo/Unageo-Light.woff2') format('woff2');
 }
+
 @font-face {
-    font-family: 'gotham', sans-serif;
+    font-family: 'Unageo';
     font-weight: 300;
     font-style: italic;
-    src: url('static/fonts/Gotham-MediumItalic.woff2') format('woff2');
+    src: url('fonts/Unageo/Unageo-Light-Italic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'gotham', sans-serif;
+    font-family: 'Unageo';
     font-weight: 400;
     font-style: normal;
-    src: url('static/fonts/Gotham-Bold.woff2') format('woff2');
+    src: url('fonts/Unageo/Unageo-Regular.woff2') format('woff2');
 }
+
 @font-face {
-    font-family: 'gotham', sans-serif;
+    font-family: 'Unageo';
     font-weight: 400;
     font-style: italic;
-    src: url('static/fonts/\Gotham-BoldItalic.woff2') format('woff2');
+    src: url('fonts/Unageo/Unageo-Regular-Italic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'gotham', sans-serif;
+    font-family: 'Unageo';
     font-weight: 500;
     font-style: normal;
-    src: url('static/fonts/Gotham-Black.woff2') format('woff2');
+    src: url('fonts/Unageo/Unageo-Medium.woff2') format('woff2');
 }
+
 @font-face {
-    font-family: 'gotham', sans-serif;
+    font-family: 'Unageo';
     font-weight: 500;
     font-style: italic;
-    src: url('static/fonts/Gotham-BlackItalic.woff2') format('woff2');
+    src: url('fonts/Unageo/Unageo-Medium-Italic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'pretendard', sans-serif;
+    font-family: 'Unageo';
+    font-weight: 600;
     font-style: normal;
-    src: url('static/fonts/Pretendard/PretendardVariable.woff2') format('woff2');
+    src: url('fonts/Unageo/Unageo-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Unageo';
+    font-weight: 600;
+    font-style: italic;
+    src: url('fonts/Unageo/Unageo-Semibold-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Unageo';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fonts/Unageo/Unageo-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Unageo';
+    font-weight: 700;
+    font-style: italic;
+    src: url('fonts/Unageo/Unageo-Bold-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Unageo';
+    font-weight: 800;
+    font-style: normal;
+    src: url('fonts/Unageo/Unageo-Extrabold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Unageo';
+    font-weight: 800;
+    font-style: italic;
+    src: url('fonts/Unageo/Unageo-Extrabold-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Unageo';
+    font-weight: 900;
+    font-style: normal;
+    src: url('fonts/Unageo/Unageo-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Unageo';
+    font-weight: 900;
+    font-style: italic;
+    src: url('fonts/Unageo/Unageo-Black-Italic.woff2') format('woff2');
 }
