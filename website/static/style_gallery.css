@@ -1,0 +1,196 @@
+h1 {
+	font-family: var(--unageo);
+	font-weight: 900;
+	line-height: 1.4;
+}
+
+h1 a {
+	color: var(--md-purple);
+}
+
+h1:hover{
+	background-color: none;
+}
+
+small {
+	font-family: var(--unageo);
+	font-size: 1.3rem;
+	line-height: 1.2;
+	font-style: normal;
+	font-weight: 700;
+	color: rgb(56, 56, 56);
+}
+
+small a {
+	color: rgb(41, 41, 41);
+	border-bottom-width: 0em;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	/* -webkit-transition:all 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+	-moz-transition:all 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+	-o-transition:all 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+	transition:all 0.1s cubic-bezier(0.25, 0.1, 0.25, 1); */
+
+	-webkit-transition:all 0.15s ease-out;
+	-moz-transition:all 0.15s ease-out;
+	-o-transition:all 0.15s ease-out;
+	transition:all 0.15s ease-out;
+}
+
+body, header, html {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	background-color: var(--md-black);
+}
+
+/**/
+
+
+body,
+body > *,
+.gallery,
+.gallery > *{
+	/* border: 1px solid red; */
+}
+
+
+/**/
+
+.gallery{
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	padding-top: 2vw;
+	margin: 0vw 4vw 4vw 4vw;
+	gap: 23px;
+
+
+	/* background-color: #035; */
+}
+
+.gallery-sub{
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+	
+	gap: 23px;
+	
+	width: 100%;
+	height: 90vh;
+
+	border-radius: var(--corner-round);
+}
+
+.gallery-sub1{
+	display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+
+	gap: 23px;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery-sub2{
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+	gap: 23px;
+
+	width: 100%;
+	height: 90vh;
+}
+
+.gallery-sub3{
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+	gap: 23px;
+
+	width: 100%;
+	height: 90vh;
+}
+
+
+.work-box{
+	height: 100%;
+    width: 100%;
+}
+
+.work-box1 {
+	width: 100%;
+	flex-grow: 3;
+}
+
+.work-box1:nth-child(2){
+	flex-grow: 1;
+}
+
+.work-box2 {
+	width: 100%;
+	flex-grow: 1;
+}
+
+.work-box2:nth-child(2){
+	flex-grow: 3;
+}
+
+.work-box3 {
+	width: 100%;
+	flex-grow: 2.3;
+}
+
+.work-box3:nth-child(2){
+	flex-grow: 1.7; 
+}
+
+.work-box,
+.work-box1,
+.work-box2,
+.work-box3{
+	border-radius: var(--corner-round);
+	background-color: var(--md-off-black);
+
+	/* background-image: url('Images/wearekrumpin.png');
+	background-size: 220%;
+	background-position: center center;
+	background-repeat: no-repeat; */
+}
+
+.work-box:hover,
+.work-box1:hover,
+.work-box2:hover,
+.work-box3:hover{
+	scale: 1.015;
+	z-index: 1;
+}
+
+
+
+@media (max-width: 800px) {
+
+
+	
+	.gallery-sub,
+	.gallery-sub1,
+	.gallery-sub2,
+	.gallery-sub3{
+		flex-direction: column;
+		height: auto;
+	}
+
+	.work-box,
+	.work-box1,
+	.work-box2,
+	.work-box3{
+		height: 300px;
+	}
+}
