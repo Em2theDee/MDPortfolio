@@ -30,3 +30,11 @@ def rvgd():
 @views.route('/krump')
 def krump():
     return render_template("work_krump.html")
+
+@views.route('/aularedo')
+def aularedo():
+    return render_template("work_aularedo.html")
+
+
+def page_not_found(error):
+    return render_template('404.html'), 404

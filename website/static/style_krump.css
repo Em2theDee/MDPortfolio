@@ -52,7 +52,7 @@ body, html {
 .work-parent{
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 50px;
 
     padding-top: 2vw;
     margin: 0 4vw 4vw 4vw;
@@ -62,44 +62,134 @@ body, html {
 	height: 80vh;
     border-radius: var(--corner-round);
     background-color: var(--md-dark-grey);
+
+	background-image: url('Images/krump/wearekrumpin.png');
+	background-size: cover;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+}
+
+.second-page{
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	gap: 80px;
+	margin: 0 10vw;
 }
 
 .work-text{
-	height: 40vh;
-	border-radius: var(--corner-round);
-	margin: 4vw 0;
-    background-color: blueviolet;
-}
-
-.work-parent-img1{
-	height: 70vh;
-
-	border-radius: var(--corner-round);
-    background-color: var(--md-dark-grey);
-}
-
-.work-parent-img2{
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	height: 70vh;
+	flex-direction: column;
+	gap: var(--gap);
+	margin: 4vw 0;
+	width: 100%;
+}
 
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-direction: row;
 	gap: var(--gap);
 }
 
-.work-child-img1,
-.work-child-img2{
-	width: 100%;
-	height: 100%;
-	border-radius: var(--corner-round);
-    background-color: var(--md-dark-grey);
+.text-1{
+	color: var(--md-White, #FFF);
+	leading-trim: both;
+	
+	text-edge: cap;
+	font-family: Unageo;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	text-transform: uppercase;
 }
 
-
-.work-parent-img3{
-	height: 70vh;
+.text-2{
+	color: var(--md-light-grey, #676767);
+	leading-trim: both;
 	
+	text-edge: cap;
+	font-family: Unageo;
+	font-size: 17.523px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.body-copy{
+	width: 600px;
+
+	color: var(--md-white, #FFF);
+	leading-trim: both;
+	
+	text-edge: cap;
+	font-family: Unageo;
+	font-size: 22.429px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.img-parent{
+	width: 100%;
+}
+
+.work-parent-img1{
+	width: 506px;
+	height: 900px;
+
 	border-radius: var(--corner-round);
-    background-color: var(--md-dark-grey);
+}
+
+@media (max-width: 1400px) {
+	.second-page{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.img-parent{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+@media (max-width: 860px) {
+
+	.first-page{
+		height: 50vh;
+	}
+	.work-text{
+		margin: 4vw;
+		padding: 20px 20px 0 20px;
+	}
+
+	.title{
+		align-items: start;
+		justify-content: start;
+		flex-direction: column;
+	}
+
+	.text-1{
+		font-size: 27px;
+	}
+
+	.text-2{
+		font-size: 14px;
+	}
+
+	.body-copy{
+		font-size: 19px;
+	}
+
+	.body-copy{
+		width: 90%;
+	}
+
+	.work-parent-img1{
+		width: 394px;
+		height: 700px;
+	}
 }

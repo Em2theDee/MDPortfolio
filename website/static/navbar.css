@@ -42,7 +42,7 @@
     z-index: 3;
     gap: 6px;
     border-radius: 30px;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     
     outline: solid 5px var(--md-purple);
     background-color: var(--md-off-black);  

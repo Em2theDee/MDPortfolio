@@ -99,6 +99,12 @@ body > *,
 
 .gallery-sub2{
 	display: flex;
+	width: 100%;
+	height: 65vh;
+}
+
+.gallery-sub3{
+	display: flex;
     flex-direction: row;
     align-items: flex-start;
 
@@ -108,7 +114,7 @@ body > *,
 	height: 90vh;
 }
 
-.gallery-sub3{
+.gallery-sub4{
 	display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -158,39 +164,70 @@ body > *,
 .work-box3{
 	border-radius: var(--corner-round);
 	background-color: var(--md-off-black);
-
-	/* background-image: url('Images/wearekrumpin.png');
-	background-size: 220%;
-	background-position: center center;
-	background-repeat: no-repeat; */
 }
 
 .work-box:hover,
-.work-box1:hover,
-.work-box2:hover,
-.work-box3:hover{
+.work-box-1:hover,
+.work-box-2:hover,
+.work-box-3:hover,
+.work-box-4:hover{
 	scale: 1.015;
 	z-index: 1;
 }
 
+.work-box-1{
+	background-image: 
+	url('Images/thumbnail_rvgd.png'),
+		linear-gradient(39deg, rgba(230,184,0,1) 0%, rgba(255,224,94,1) 100%);;
+}
+
+.work-box-2{
+	background-image: 
+		url('Images/thumbnail_krumpin.png'),
+		linear-gradient(201deg, rgba(75,0,244,0.5) 0%, rgba(40,0,131,0.5) 100%);
+}
+
+.work-box2-1,
+.work-box-3{
+	background-image: 
+		url('Images/thumbnail_apex.png'),
+		url('Images/thumbnail_apex_bg.png');
+	background-color: #0070B9;
+}
+
+.work-box-4{
+	background-image: 
+		url('Images/thumbnail_aularedesign.png'),
+		radial-gradient(circle, rgba(105,41,197,1) 0%, rgba(67,20,134,1) 100%);
+	background-color: #0070B9;
+}
+
+.work-box-4,
+.gallery-sub1 > *,
+.work-box-3{
+	background-size: contain;
+	background-position: center center;
+  	background-repeat: no-repeat;
+	border-radius: var(--corner-round);
+	width: 100%;
+	height: 100%;
+}
 
 
 @media (max-width: 800px) {
-
-
 	
 	.gallery-sub,
 	.gallery-sub1,
-	.gallery-sub2,
-	.gallery-sub3{
+	.gallery-sub2{
 		flex-direction: column;
 		height: auto;
 	}
 
 	.work-box,
-	.work-box1,
-	.work-box2,
-	.work-box3{
+	.work-box-1,
+	.work-box-2,
+	.work-box-3,
+	.work-box-4{
 		height: 300px;
 	}
 }

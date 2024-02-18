@@ -145,27 +145,29 @@ body > *,
 }
 
 .flexinside1{
-	background-image: url('Images/6353554_73.png');
+	background-image: 
+		url('Images/thumbnail_krumpin.png'),
+		linear-gradient(201deg, rgba(75,0,244,0.5) 0%, rgba(40,0,131,0.5) 100%);
+	background-size: contain;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+}
+
+.flexinside2{
+	background-image: 
+		url('Images/thumbnail_rvgd.png'),
+		linear-gradient(39deg, rgba(230,184,0,1) 0%, rgba(255,224,94,1) 100%);;
+	background-size: contain;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+}
+
+.flexinside3{
+	background-image: url('Images/thumbnail_apex.png'), url('Images/thumbnail_apex_bg.png');
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: #0070B9;
-}
-
-.flexinside2{
-	background-image: url('Images/Behance.png');
-	background-size: contain;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: #FFF200;
-}
-
-.flexinside3{
-	background-image: url('Images/wearekrumpin.png');
-	background-size: 220%;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: #4e00f8;
 }
 
 .button-gal{
@@ -216,7 +218,7 @@ body > *,
 	border-width: 6px 6px 1px 1px;
 	border-style: solid;
 	border-color: var(--md-dark-grey);
-	padding: 20px 35px 25px 40px ;
+	padding: 20px 35px 14px 29px;
 }
 
 .contact-parent{

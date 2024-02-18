@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+            
+    <title>MDPortfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="icon" type="MDlogo" href="static/images/newlogoinverted.png">
+    <link rel="stylesheet" href="static/style_aularedo.css">
+    <link rel="stylesheet" href="static/fonts.css">
+    <link rel="stylesheet" href="static/navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<header>
+    <div class="nav-parent screen-height">
+        <div class="navbar">
+            <a class="nav-button nav-button-left" href="{{ url_for('views.gallery') }}" rel="home_page"><h1>WORK</h1></a>
+            <a class="nav-button" href="{{ url_for('views.about') }}" rel="history"><h1>ABOUT ME</h1></a>
+            <a class="nav-button" href="{{ url_for('views.contact') }}" rel="history"><h1>REACH OUT</h1></a>
+            <a class="nav-button nav-button-right" href="{{ url_for('views.index') }}" rel="history">
+                <img src="static/SVG/Md designer.svg" alt="Description of the image">
+            </a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="parent-bob">
+        <div class="first-page"></div>
+        <div class="work-text">
+            <div class="title">
+                <div class="text-1">Aula Mobile App Redesign</div>
+                <div class="text-2">UX/UI Case Study</div>
+            </div>
+            <div class="body-copy">Overview<br><br>This case study focuses on revamping the 'Aula' mobile app to enhance user experience by eliminating redundancy in its UI. Through targeted user research and strategic design iterations, we streamlined navigation and removed duplicate features. The result is a more efficient and user-friendly Aula app experience, achieved through intuitive design principles and rigorous usability testing.<br><br>Warning its a very long scroll!</div>
+        </div>
+        <div class="bob">
+            <img src="static/Images/aula/pg1.png" class="work-box1">
+            <img src="static/Images/aula/pg2.png" class="work-box2">
+            <img src="static/Images/aula/pg3.png" class="work-box3">
+            <img src="static/Images/aula/pg4.png" class="work-box4">
+            <img src="static/Images/aula/pg5.png" class="work-box5">
+            <img src="static/Images/aula/pg6.png" class="work-box6">
+            <img src="static/Images/aula/pg7.png" class="work-box7">
+            
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+
+<footer>
+
+    <div class="grid-containers">
+        <div class="column">
+
+            <div class="sub-column">    
+                <a href="https://www.instagram.com/md_ldn/" target="_blank">
+                    <img src="static/SVG/IG.svg" alt="Instagram" width="50" height="50">
+                </a>
+            </div>
+
+            <div class="sub-column">
+                <a href="https://the-dots.com/users/darius-danciu-1501879" target="_blank">
+                    <img src="static/SVG/the_dots.svg" alt="The Dots" width="50" height="50">
+                </a>
+            </div>
+
+            <div class="sub-column">
+                <a href="https://www.reddit.com/user/EEM_DEE" target="_blank">
+                    <img src="static/SVG/reddit.svg" alt="Reddit" width="50" height="50">
+                </a>
+            </div>
+
+            <div class="sub-column">
+                <a href="https://www.behance.net/MDdesignerBE" target="_blank">
+                    <img src="static/SVG/Behance.svg" alt="Behance" width="50" height="50">
+                </a>
+            </div>
+
+            <div class="sub-column">
+                <a href="https://www.linkedin.com/in/darius-manuel-danciu/" target="_blank">
+                    <img src="static/SVG/LinkedIn.svg" alt="LinkedIn" width="50" height="50">
+                </a>
+            </div>        
+        </div>
+        
+        <div class="column">
+            <div>
+                <small>MDdesigner©</small>
+            </div>
+        </div>
+    </div>
+</footer>

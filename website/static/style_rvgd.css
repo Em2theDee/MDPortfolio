@@ -59,47 +59,193 @@ body, html {
 }
 
 .first-page{
-	height: 80vh;
-    border-radius: var(--corner-round);
-    background-color: var(--md-dark-grey);
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-direction: row;
+	overflow: scroll;
+	gap: var(--gap);
+	border-radius: var(--corner-round);
+    background-color: var(--md-off-black);
+	padding: 4vw;
+
+}
+
+.page-parent{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: var(--gap);
+	cursor: pointer;
+}
+
+.page{
+	border-radius: 20px;
+	background-color: aqua;
+	min-width: 700px;
+	height: 700px;
+
+	scroll-snap-align: center;
+	transition: scroll-snap-align 0.3s ease;
+
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+._1{
+	background-image: url('Images/rvgd/Pin Instagram.png');
+}
+
+._2{
+	background-image: url('Images/rvgd/Pin Instagram_1.png');
+}
+
+._3{
+	background-image: url('Images/rvgd/Pin Instagram_2.png');
+}
+
+._4{
+	background-image: url('Images/rvgd/Pin Instagram_3.png');
+}
+
+._5{
+	background-image: url('Images/rvgd/Pin Instagram_4.png');
+}
+
+._6{
+	background-image: url('Images/rvgd/Pin Instagram_5.png');
+}
+
+._7{
+	background-image: url('Images/rvgd/Pin Instagram_6.png');
+}
+
+._8{
+	background-image: url('Images/rvgd/Pin Instagram_7.png');
+}
+
+._9{
+	background-image: url('Images/rvgd/Pin Instagram_8.png');
+}
+
+._10{
+	background-image: url('Images/rvgd/Pin Instagram_9.png');
+}
+
+
+/* For WebKit (Chrome, Safari) */
+.page-parent::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.page-parent::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 5px; /* Radius of the scrollbar handle */
+}
+
+/* For Firefox */
+.page-parent {
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: #888 transparent; /* Color of the scrollbar handle and track */
+}
+
+/* Hover effect */
+.page-parent:hover::-webkit-scrollbar-thumb {
+  background: #fff; /* Change handle color on hover in WebKit */
+}
+
+.page-parent:hover {
+  scrollbar-color: #fff transparent; /* Change scrollbar color on hover in Firefox */
 }
 
 .work-text{
-	height: 40vh;
-	border-radius: var(--corner-round);
-	margin: 4vw 0;
-    background-color: blueviolet;
-}
-
-.work-parent-img1{
-	height: 70vh;
-
-	border-radius: var(--corner-round);
-    background-color: var(--md-dark-grey);
-}
-
-.work-parent-img2{
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	height: 70vh;
+	flex-direction: column;
+	gap: var(--gap);
+	margin: 4vw;
+	padding: 50px 50px 0 50px;
+}
 
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-direction: row;
 	gap: var(--gap);
 }
 
-.work-child-img1,
-.work-child-img2{
-	width: 100%;
-	height: 100%;
-	border-radius: var(--corner-round);
-    background-color: var(--md-dark-grey);
+.text-1{
+	color: var(--md-White, #FFF);
+	leading-trim: both;
+	
+	text-edge: cap;
+	font-family: Unageo;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	text-transform: uppercase;
 }
 
-
-.work-parent-img3{
-	height: 70vh;
+.text-2{
+	color: var(--md-light-grey, #676767);
+	leading-trim: both;
 	
-	border-radius: var(--corner-round);
-    background-color: var(--md-dark-grey);
+	text-edge: cap;
+	font-family: Unageo;
+	font-size: 17.523px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.body-copy{
+	width: 60%;
+
+	color: var(--md-white, #FFF);
+	leading-trim: both;
+	
+	text-edge: cap;
+	font-family: Unageo;
+	font-size: 22.429px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media (max-width: 860px) {
+
+	.work-text{
+		margin: 4vw;
+		padding: 20px 20px 0 20px;
+	}
+
+	.page{
+		min-width: 80vw;
+		height: 80vw;
+	}
+
+	.title{
+		display: flex;
+		align-items: start;
+		justify-content: start;
+		flex-direction: column;
+	}
+
+	.text-1{
+		font-size: 27px;
+	}
+
+	.text-2{
+		font-size: 14px;
+	}
+
+	.body-copy{
+		font-size: 19px;
+	}
+
+	.body-copy{
+		width: 90%;
+	}
 }

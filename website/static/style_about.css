@@ -97,6 +97,10 @@ body, html {
     height: 350px;
 }
 
+.workbox3{
+    width: 100%;
+}
+
 .parent{
 
     margin: 0;
@@ -113,7 +117,24 @@ body, html {
 
 
 .child1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: var(--corner-round);
+}
+
+.child1-text{
+    color: var(--md-off-white);
+    text-align: center;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Unageo;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 152%; /* 85.12px */
+    letter-spacing: 2.24px;
 }
 
 .parent2{
@@ -164,18 +185,60 @@ body, html {
     border-radius: var(--corner-round);
 }
 
-.child2,
+.child2{
+    border-radius: var(--corner-round);
+    background-image: url('SVG/Logosvg loog.svg');
+    background-size: 12vw;
+	background-position: center center;
+  	background-repeat: no-repeat;
+}
+
 .child3{
     border-radius: var(--corner-round);
+    background-image: url('SVG/Romania2England.svg');
+    background-size: 15vw;
+	background-position: center center;
+  	background-repeat: no-repeat;
 }
 
 .child4{
+    display: flex;
+    justify-content: start;
+    align-items: end;
     border-radius: var(--corner-round);
+    background-image: url('Images/MD_photo.jpg');
+    background-size: cover;
+	background-position: center center;
+  	background-repeat: no-repeat;
 }
 
-.child5{    
-    height: 250px;
-	border-radius: var(--corner-round);
+.child4-text{
+    padding: 35px 45px;
+    color: var(--md-off-white);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Unageo;
+    font-size: 58.341px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 108%; 
+    letter-spacing: 1.167px;
+}
+
+.child5{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--corner-round);
+    background-color: var(--md-off-black);
+}
+
+.child5-text{
+    padding: 80px 200px;
+    color: var(--md-off-white);
+    font-family: var(--unageo);
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .parent6{
@@ -189,22 +252,125 @@ body, html {
     border-radius: var(--corner-round);
 }
 
-.child6,
-.child7{  
+.child6{
     flex: 1;
-	border-radius: var(--corner-round);
+	border-radius: var(--corner-round)
 }
+
 .child6{
     flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
 }
-.child7{
+
+.child6-text{
+
+    color: var(--md-off-white);
+    text-align: center;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Unageo;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 141.5%; /* 59.947px */
+    letter-spacing: 0.847px;
+}
+
+.child6-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.child6-rom,
+.child6-eng{
+    text-align: center;
+    font-family: Unageo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    background-color: var(--md-off-white);
+    color: var(--md-black);
+
+    border-radius: var(--corner-round);
+    padding: 10px 30px;
+}
+
+
+.child7{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+
+    flex: 1;
+    border-radius: var(--corner-round);
     flex-basis: 70%;
 }
 
-.workbox1:hover,
-.workbox2:hover{
+.child7-text{
+      color: var(--md-off-white);
+    text-align: center;
+    leading-trim: both;
+    
+    text-edge: cap;
+    font-family: Unageo;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 141.5%;
+    letter-spacing: 0.847px;
+}
+
+.child7-icons{
+    /* width: 300px;
+    height: 200px; */
+    padding: 80px;
+
+}
+
+.child4:hover{
 	scale: 1.015;
 	z-index: 1;
+}
+
+@media (max-width:1400px) {
+    .child5-text{
+        padding: 80px;
+    }
+}
+
+@media (max-width:950px) {
+    .child5-text{
+        font-size: 20px;
+        padding: 40px;
+		line-height: 35px;
+		letter-spacing: 1px;
+    }
+
+    .child2,
+    .child3,
+    .child6,
+    .child7,
+    .parent5,
+    .parent6{
+        visibility: hidden;
+        flex-basis: 0%;
+        display: none;
+    }
+    .child4{
+        width: 100%;
+        flex-basis: 100%;
+    }
 }
 
 
