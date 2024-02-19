@@ -61,7 +61,7 @@ body, html {
 .first-page{
 	height: 50vw;
     border-radius: var(--corner-round);
-    background-image: url('Images/apex/deck.png');
+    background-image: url('static/Images/apex/deck.png');
     background-size: cover;
 	background-position: center center;
   	background-repeat: no-repeat;
