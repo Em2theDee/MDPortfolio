@@ -59,12 +59,9 @@ body, html {
 }
 
 .first-page{
-	height: 50vw;
+	height: 40vw;
     border-radius: var(--corner-round);
-    background-image: url('static/Images/apex/deck.png');
-    background-size: cover;
-	background-position: center center;
-  	background-repeat: no-repeat;
+	object-fit: cover; /* Maintain aspect ratio while covering the entire container */
 }
 
 .work-text{
