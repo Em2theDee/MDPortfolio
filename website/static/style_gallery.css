@@ -126,10 +126,6 @@ body > *,
 }
 
 
-.work-box{
-	height: 100%;
-    width: 100%;
-}
 
 .work-box1 {
 	width: 100%;
@@ -190,8 +186,7 @@ body > *,
 .work-box2-1,
 .work-box-3{
 	background-image: 
-		url('Images/thumbnail_apex.png'),
-		url('Images/thumbnail_apex_bg.png');
+		url('Images/thumbnail_apex.png');
 	background-color: #0070B9;
 }
 
@@ -228,6 +223,6 @@ body > *,
 	.work-box-2,
 	.work-box-3,
 	.work-box-4{
-		height: 300px;
+		min-height: 60vw;
 	}
 }

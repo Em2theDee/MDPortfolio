@@ -15,33 +15,35 @@ window.addEventListener('resize', handleWindowResize);
 
 
 // ----------------------------
+const pointerScroll = (elem) => {
+
+  let isDrag = false;
+  
+  const dragStart = () => isDrag = true;
+  const dragEnd = () => isDrag = false;
+  const drag = (ev) => isDrag && (elem.scrollLeft -= ev.movementX);
+  
+  elem.addEventListener("pointerdown", dragStart);
+  addEventListener("pointerup", dragEnd);
+  addEventListener("pointermove", drag);
+};
+
+document.querySelectorAll(".page-parent").forEach(pointerScroll);
 
 
+//-----------------------
 
-let mouseDown = false;
-let startX, scrollLeft;
-const slider = document.querySelector('.page-parent');
 
-const startDragging = (e) => {
-  mouseDown = true;
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-}
+const pointerScrollY = (elem) => {
+  let isDrag = false;
+  
+  const dragStart = () => isDrag = true;
+  const dragEnd = () => isDrag = false;
+  const drag = (ev) => isDrag && (elem.scrollTop -= ev.movementY); // Adjust scroll top
+  
+  elem.addEventListener("pointerdown", dragStart);
+  addEventListener("pointerup", dragEnd);
+  addEventListener("pointermove", drag);
+};
 
-const stopDragging = (e) => {
-  mouseDown = false;
-}
-
-const move = (e) => {
-  e.preventDefault();
-  if(!mouseDown) { return; }
-  const x = e.pageX - slider.offsetLeft;
-  const scroll = x - startX;
-  slider.scrollLeft = scrollLeft - scroll;
-}
-
-// Add the event listeners
-slider.addEventListener('mousemove', move, false);
-slider.addEventListener('mousedown', startDragging, false);
-slider.addEventListener('mouseup', stopDragging, false);
-slider.addEventListener('mouseleave', stopDragging, false);
+document.querySelectorAll(".child-box-apex").forEach(pointerScrollY);

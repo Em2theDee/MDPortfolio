@@ -1,1 +1,71 @@
-hellow owrkasda
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    
+    <title>MDPortfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="icon" type="MDlogo" href="static/images/newlogoinverted.png">
+    <link rel="stylesheet" href="static/style_404.css">
+    <link rel="stylesheet" href="static/fonts.css">
+    <link rel="stylesheet" href="static/navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="_404">ERROR 404</div>
+        <div class="text-1">This page probably doesn't exist or you've misspelt the url.</div>
+        <div class="button-gal">
+            <a href="{{ url_for('views.index') }}" rel="history">
+                <button class="gallery-button">lets go back</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+<footer>
+
+    <div class="grid-containers">
+        <div class="column">
+
+            <div class="sub-column">    
+                <a href="https://www.instagram.com/md_ldn/" target="_blank">
+                    <img src="static/SVG/IG.svg" alt="Instagram" width="50" height="50">
+                </a>
+            </div>
+
+            <div class="sub-column">
+                <a href="https://the-dots.com/users/darius-danciu-1501879" target="_blank">
+                    <img src="static/SVG/the_dots.svg" alt="The Dots" width="50" height="50">
+                </a>
+            </div>
+
+            <div class="sub-column">
+                <a href="https://www.reddit.com/user/EEM_DEE" target="_blank">
+                    <img src="static/SVG/reddit.svg" alt="Reddit" width="50" height="50">
+                </a>
+            </div>
+
+            <div class="sub-column">
+                <a href="https://www.behance.net/MDdesignerBE" target="_blank">
+                    <img src="static/SVG/Behance.svg" alt="Behance" width="50" height="50">
+                </a>
+            </div>
+
+            <div class="sub-column">
+                <a href="https://www.linkedin.com/in/darius-manuel-danciu/" target="_blank">
+                    <img src="static/SVG/LinkedIn.svg" alt="LinkedIn" width="50" height="50">
+                </a>
+            </div>        
+        </div>
+        
+        <div class="column">
+            <div>
+                <small>MDdesigner©</small>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

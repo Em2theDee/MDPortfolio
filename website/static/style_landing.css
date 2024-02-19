@@ -163,11 +163,11 @@ body > *,
 }
 
 .flexinside3{
-	background-image: url('Images/thumbnail_apex.png'), url('Images/thumbnail_apex_bg.png');
-	background-size: contain;
+	background-image: 
+		url('Images/thumbnail_apex.png');
+	background-color: #0070B9;	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-color: #0070B9;
 }
 
 .button-gal{
@@ -338,12 +338,6 @@ body > *,
     }
 }
 
-@media (max-width: 1250px) {
-	.flexinside3{
-		background-size: cover;
-	}
-}
-
 
 
 @media (max-width: 800px) {
@@ -368,6 +362,7 @@ body > *,
 	
 	.workbox > * {
 		flex-basis: calc(100% - 4px);
+		height: 60vw;
 	}
 
 	.contact-parent{

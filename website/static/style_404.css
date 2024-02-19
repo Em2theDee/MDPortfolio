@@ -1,0 +1,135 @@
+h1 {
+	font-family: var(--unageo);
+	font-weight: 900;
+	line-height: 1.4;
+}
+
+h1 a {
+	color: var(--md-purple);
+}
+
+h1:hover{
+	background-color: none;
+}
+
+small {
+	font-family: var(--unageo);
+	font-size: 1.3rem;
+	line-height: 1.2;
+	font-style: normal;
+	font-weight: 700;
+	color: rgb(56, 56, 56);
+}
+
+small a {
+	color: rgb(41, 41, 41);
+	border-bottom-width: 0em;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	/* -webkit-transition:all 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+	-moz-transition:all 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+	-o-transition:all 0.1s cubic-bezier(0.25, 0.1, 0.25, 1);
+	transition:all 0.1s cubic-bezier(0.25, 0.1, 0.25, 1); */
+
+	-webkit-transition:all 0.15s ease-out;
+	-moz-transition:all 0.15s ease-out;
+	-o-transition:all 0.15s ease-out;
+	transition:all 0.15s ease-out;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	background-color: var(--md-black);
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	gap: var(--gap);
+	height: 91vh;
+	padding: 0 25vw;
+}
+
+._404{
+	color: var(--md-white);
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Unageo;
+	font-size: clamp(30px, 10vw, 220px);
+	white-space: nowrap;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+}
+
+.text-1{
+	color: var(--md-white);
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Unageo;
+	font-size: clamp(20px, 10vw, 1.3vw);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+
+.button-gal{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	width: 100%;
+	height: 70px;
+	margin-top: 4vw;
+}
+
+.gallery-button {
+	font-family: var(--unageo);
+	font-weight: 900;
+	font-size: clamp(10px, 10vw, 20px);
+	letter-spacing: 1px;
+	white-space: nowrap;
+	text-align: center;
+	color: var(--md-off-white);
+
+	border-width: 0px;
+	border-style: solid;
+	border-color: var(--md-dark-grey);
+	border-radius: 30px;
+ 	background-color: var(--md-off-black);
+
+	padding: 20px 35px;
+
+	transition:
+		color 0.1s ease-in-out, 
+		background-color 0.1s ease-in-out, 
+		transform 0.1s ease-in-out,
+}
+
+.gallery-button:hover{
+	border-width: 1px 1px 6px 6px;
+	border-style: solid;
+	border-color: var(--md-dark-grey);
+	padding: 14px 29px 20px 35px;
+
+	transition:
+		color 0.1s ease-in-out, 
+		background-color 0.1s ease-in-out, 
+		transform 0.1s ease-in-out,
+}
+
+.gallery-button:active{ 
+	border-width: 6px 6px 1px 1px;
+	border-style: solid;
+	border-color: var(--md-dark-grey);
+	padding: 20px 35px 14px 29px;
+}

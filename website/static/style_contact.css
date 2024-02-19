@@ -59,79 +59,6 @@ body > *,
 body{
 	height: 100vh;
 } 
- /* .contact-parent{
-    display: flex;
-    flex-direction: row;
-	align-items: start;
-    justify-content: center;
-    gap: var(--gap);
-	margin: 0 4vw;
-	padding: 4vw 0;
-	height: 60vh;
-	 margin-bottom: 4vw; 
-}
-
-.contact-parent > *{
-	flex-grow: 1;
-}
-
-.contact-pic{
-	height: 80%;
-	padding: 50px;
-
-
-    background-image: url('Images/MD_photo.jpg');
-    background-size: cover;
-	background-position: center center;
-  	background-repeat: no-repeat;
-
-    border-radius: var(--corner-round);
-}
-
-.contact-text{
-	display: flex;
-	flex-direction: column;
-	gap: var(--gap);
-	
-	height: 50%;
-	padding: 50px;
-	
-    border-radius: var(--corner-round);
-	background-color: var(--md-off-black);
-}
-
-.contact-1,
-.contact-2{
-
-	border-radius: 28px;
-	padding: 20px 40px;
-	background-color: var(--md-dark-grey);
-
-	white-space: normal;
-	color: var(--md-off-white);
-	font-family: Unageo;
-	font-size: 25px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 128%;
-	letter-spacing: 1.464px;
-
-}
-
-@media (max-width: 1400px) {
-	.contact-parent{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 2vw 0;
-		margin: 0 2vw;
-	}
-
-	.contact-1,
-	.contact-2{
-		font-size: 3vw;
-	}
-}  */
 
 .contact-parent{
 	display: flex;
@@ -185,10 +112,19 @@ body{
 	white-space: normal;
 	color: var(--md-off-white);
 	font-family: Unageo;
-	font-size: clamp(10px, 2vw, 24px);
+	font-size: clamp(15px, 2vw, 24px);
 	font-style: normal;
 	font-weight: 500;
 	line-height: 128%;
 	letter-spacing: 1.464px;
+	overflow-wrap: break-word; /* Standard name */
+	word-wrap: break-word; /* Legacy name for compatibility */
+}
+
+@media (max-width:800px) {
+
+	.contact-text{
+		padding: 20px;
+	}
 
 }
