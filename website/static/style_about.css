@@ -49,6 +49,14 @@ body, html {
 	background-color: var(--md-black);
 }
 
+body,
+.gallery-bento,
+.about-parent,
+.about-text,
+.about{
+    /* border: 1px solid rgb(255, 0, 0); */
+}
+
 .gallery-bento{
     display: flex;
     flex-direction: column;
@@ -63,7 +71,7 @@ body, html {
     height: 90vh;
 }
 
-.about{
+.about-text{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +84,21 @@ body, html {
 	letter-spacing: 1.887px;
 	color: var(--md-white);
 
+    position: absolute;
+    top: 50%; /* Adjust vertically */
+    left: 50%; /* Adjust horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure text appears above the video */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a text shadow */}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: var(--corner-round);
     background-color: var(--md-purple);
 }
@@ -351,9 +373,26 @@ body, html {
 }
 
 @media (max-width:950px) {
+    .about-parent {
+        height: 55vh;
+        position: relative; /* Add relative positioning */
+    }
 
-    .about-parent{
-        height: 40vh;
+    .about-text {
+        padding: 40px;
+        position: absolute; /* Position the text absolutely */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%);
+        z-index: 10; /* Ensure text appears above the video */
+    }
+
+    .about {
+        height: 100%; /* Adjust video height */
+        width: 100%; /* Adjust video width */
+        object-fit: cover;
+        border-radius: var(--corner-round);
+        background-color: var(--md-purple);
     }
 
     .child5-text{
